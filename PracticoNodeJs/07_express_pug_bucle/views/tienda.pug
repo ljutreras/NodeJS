@@ -1,0 +1,10 @@
+doctype html 
+html(lang="es")
+
+head 
+    title #{titulo}
+
+body 
+    each camiseta in camisetas  
+        div.item 
+            h2 Camiseta #{camiseta.color}
