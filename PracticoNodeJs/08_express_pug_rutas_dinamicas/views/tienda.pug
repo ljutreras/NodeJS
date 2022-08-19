@@ -1,0 +1,15 @@
+doctype html 
+html(lang="es")
+
+head 
+    title Tienda
+
+body 
+    h1 
+        a(href="#") Tienda de camisetas 
+
+    each camiseta in camisetas  
+        div.item 
+            h2 Camiseta #{camiseta.color}
+            img(src=camiseta.imagen, alt="camiseta")
+            a(href="tienda/comprar/" + camiseta.color) Comprar 
